@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "br.gov.sp.prefeitura.smped.portalObservatorio.config.ApplicationConfig",
+      "sourceType": "br.gov.sp.prefeitura.smped.portalObservatorio.config.ApplicationConfig"
+    },
+    {
+      "name": "app.cors",
+      "type": "br.gov.sp.prefeitura.smped.portalObservatorio.config.CorsConfig",
+      "sourceType": "br.gov.sp.prefeitura.smped.portalObservatorio.config.CorsConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.api-painel-base-url",
+      "type": "java.lang.String",
+      "sourceType": "br.gov.sp.prefeitura.smped.portalObservatorio.config.ApplicationConfig"
+    },
+    {
+      "name": "app.cors.allowed-origins",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "br.gov.sp.prefeitura.smped.portalObservatorio.config.CorsConfig"
+    }
+  ],
+  "hints": []
+}

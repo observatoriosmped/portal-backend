@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  portal-back:
+   build: ./
+   container_name: portal-backend
+   environment:
+      API_PAINEL: "${API_PAINEL}"
+      AUTH_SERVER_TOKEN_URI: "${AUTH_SERVER_TOKEN_URI}"
+      CLIENT_ID: "${CLIENT_ID}"
+      CLIENT_SECRET: "${CLIENT_SECRET}"
+      AUTH_SERVER_PUBLIC_KEY: "${AUTH_SERVER_PUBLIC_KEY}"
+      ALLOWED_ORIGINS: "${ALLOWED_ORIGINS}"
+   networks:
+      - observatorio-network
+networks:
+  observatorio-network:
+    external:
+      name: observatorio-network

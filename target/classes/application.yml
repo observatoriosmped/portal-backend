@@ -1,0 +1,19 @@
+app:
+  apiPainelBaseUrl: ${API_PAINEL}
+  cors:
+    allowed-origins: ${ALLOWED_ORIGINS}
+security:
+  oauth2:
+    client:
+      provider:
+        authProvider:
+          token-uri: ${AUTH_SERVER_TOKEN_URI}
+      registration:
+        authProvider:
+          client-id: ${CLIENT_ID}
+          client-secret: ${CLIENT_SECRET}
+          authorization-grant-type: client_credentials
+          scopes: read,write
+    resource:
+      jwt:
+        key-value: ${AUTH_SERVER_PUBLIC_KEY}
